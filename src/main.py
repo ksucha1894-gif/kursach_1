@@ -47,3 +47,4 @@ def get_financial_data(date_str: str, range_type='M'):
         "Курсы валют": currency_rates,
         "Цена S&P 500": sp500_price
     }
+
