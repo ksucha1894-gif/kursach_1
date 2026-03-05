@@ -76,7 +76,7 @@ def spending_by_category(
             for col in columns:
                 # Приводим колонки к строке, чтобы гарантировать тип ``str``.
                 if kw.lower() in str(col).lower():
-                    return str(col)  # <-- явный приведение к ``str``
+                    return str(col)
         return None
 
     date_col = find_column(transactions.columns, column_mapping["date"])
