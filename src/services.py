@@ -17,7 +17,7 @@ def analyze_bonus_from_excel(excel_path: str, year: int, month: int) -> str:
     Читает Excel файл через read_operations_excel, анализирует транзакции за указанный месяц и возвращает JSON.
     """
     try:
-        # Чтение Excel файла с помощью вашей функции
+        # Чтение Excel файла с помощью функции
         df = read_operations_excel(excel_path)
         if df.empty:
             logging.error("Пустой DataFrame после чтения файла.")
